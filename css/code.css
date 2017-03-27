@@ -1,7 +1,21 @@
-p#greeting{font-size:40px;font-family:monospace;color:#9966ff;padding-left:50px
+p#greeting{font-size:38px;font-family:monospace;color:#9966ff;padding-left:50px;
+	font-style: italic;color: blue;
 }
 
 body{
-	background-size: 
-	background-image: url("/home/recoded/Downloads/pexels-photo-332825.jpeg");
+	background-size: 100%; 
+	background-image: url("https://static.pexels.com/photos/234171/pexels-photo-234171.jpeg");
+}
+
+#home{
+	height: 100%;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.landing-title{
+	font-size: 50px;
+	color: grey;
 }
