@@ -1,18 +1,31 @@
 
 
-$.get('https://api.github.com/users/dlkhwaz/repos?sort=created',function(data){
+// $.get('https://api.github.com/users/dlkhwaz/repos?sort=created',function(data){
 
-
-	function loadDoc() {
-  var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-     document.getElementById("demo").innerHTML = this.responseText;
-    }
-  };
-  xhttp.open("GET", "ajax_info.txt", true);
-  xhttp.send();
+// }
+$(document).ready(function(){
+	loadProjects();
+	$('#btnFav').click(function(){
+		$('#favourite').fadeIn();
+	})
+	$('#currentBtn').click(loadProjects)
+});
+function loadProjects(){
+	$.ajax({
+		url: 'https://api.github.com/users/dlkhwaz/repos?sort=created&per_page=5',
+		type: 'GET',
+		success: function(json){
+			result(json);
+		}
+	})
 }
-
-
-})
+function result(data){
+	var html= '';
+	html+= '<ul class="projects">';
+	$.each(data, function(i,item){
+		// html+= '<li><h1>' + item.name +'</h1>';
+		html+= '<li><a href="'+ item.html_url+'" target="_blank">' + item.name +'</a></li>';
+	})
+	html+= '</ul>'
+	$('#result').html(html);
+}
