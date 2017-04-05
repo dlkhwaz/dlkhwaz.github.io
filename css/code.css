@@ -50,11 +50,12 @@ h1,h2,h3,h4,h5,h6{
 }
 h1{
 	font-family: 'Macondo', cursive;
-	/*text-align: center;*/
+	text-align: center;
 }
 .h1, .h2, .h3, h1, h2, h3{
 	font-family: 'Macondo', cursive;
 	font-size: 24px;
+	text-align: center;
 }
 .welcome{
 
@@ -98,8 +99,8 @@ body{
 
 *{
 	font-color: black;
-	text-align: center;
-}
+	/*text-align: center;
+*/}
 ul.projects {
 	list-style: none;
 	padding: 0;
