@@ -1,6 +1,6 @@
 {
 	"skills":[
-		{"name": "HTML", "description": "Stands for hypertext markup language"},
+		{"name": "HTML", "description": "HTML is short for HyperText Markup Language. HTML is used to create electronic documents (called pages) that are displayed on the World Wide Web."},
 		{"name": "CSS", "description": "it is used to style web pages."},
 		{"name": "JAVASCRIPT", "description": "Stands for hypertext markup language. JavaScript is a cross-platform, object-oriented scripting language. It is a small and lightweight language. Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of its environment to provide programmatic control over them.JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core set of language elements such as operators, control structures, and statements."},
 		{"name": "AJAX", "description": "AJAX is a developer's dream, because you can Update a web page without reloading a web page."},

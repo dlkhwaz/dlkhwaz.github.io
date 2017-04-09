@@ -50,12 +50,14 @@ h1,h2,h3,h4,h5,h6{
 }
 h1{
 	font-family: 'Macondo', cursive;
-	text-align: center;
+	/*text-align: center;*/
 }
 .h1, .h2, .h3, h1, h2, h3{
 	font-family: 'Macondo', cursive;
 	font-size: 24px;
-	text-align: center;
+}
+#about{
+text-align: center;
 }
 .welcome{
 
@@ -89,7 +91,7 @@ body{
 }
 .container-fluid{
 	border-color: #99ccff;
-	background-color: #3fb4db;
+	background-color: black;
 	color: black;
 }
 .navbar-inverse{
@@ -174,3 +176,27 @@ a.twit:active { background-position: -80px -40px; }
 a.gplus { background-position: 0 -80px; }
 a.gplus:hover { background-position: -40px -80px; }
 a.gplus:active { background-position: -80px -80px; }
+
+#channel-image {
+  width: 2em;
+  height: 2em;
+  vertical-align: middle;
+}
+
+#channel-name {
+  margin-left: 0.2em;
+  margin-right: 0.2em;
+}
+
+#disclaimer {
+  font-size: 0.75em;
+  color: #aeaeae;
+  max-width: 350px;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.5em;
+}
+
+

@@ -1,26 +1,20 @@
-$(document).ready(function(){
-	loadProjects();
-	$('#btnFav').click(function(){
-		$('#favourite').fadeIn();
-	})
-	$('#currentBtn').click(loadProjects)
-});
-function loadProjects(){
+var url='https://www.googleapis.com/youtube/v3/videos?part=snippet&key=AIzaSyBCi2XQJWVhMgBEzjAqKPgaHQtRK7drgL8&chart=mostPopular&q=javascript'
+function loadData(){
 	$.ajax({
-		url: 'https://www.googleapis.com/youtube/v3/videos',
-		type: 'GET',
-		success: function(json){
-			result(json);
+		url:url,
+		type:'GET'
+		success: function(data){
+			result(data);
 		}
 	})
 }
 function result(data){
 	var html= '';
-	html+= '<ul class="projects">';
+	html+= '<ul>';
 	$.each(data, function(i,item){
 		// html+= '<li><h1>' + item.name +'</h1>';
 		html+= '<li><a href="'+ item.html_url+'" target="_blank">' + item.name +'</a></li>';
 	})
 	html+= '</ul>'
-	$('#result').html(html);
+	$('.result').html(html);
 }
