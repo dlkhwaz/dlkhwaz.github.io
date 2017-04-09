@@ -1,20 +1,23 @@
-var url='https://www.googleapis.com/youtube/v3/videos?part=snippet&key=AIzaSyBCi2XQJWVhMgBEzjAqKPgaHQtRK7drgL8&chart=mostPopular&q=javascript'
-function loadMyVideo(){
+
+$(document).ready(function(){
+	loadNews();
+});
+function loadNews(){
 	$.ajax({
-		url:url,
-		type:'GET'
-		success: function(data){
-			result(data);
+		url: "https://newsapi.org/v1/articles?source=time&sortBy=top&apiKey=2f5eb3b1f2814f7ab5f9750aeb84061d",
+		type: 'GET',
+		success: function(json){
+			result(json);
 		}
 	})
 }
 function result(data){
 	var html= '';
 	html+= '<ul>';
-	$.each(data, function(i,item){
-		// html+= '<li><h1>' + item.name +'</h1>';
-		html+= '<li><a href="'+ item.html_url+'" target="_blank">' + item.name +'</a></li>';
+	$.each(data.articles, function(i,item){
+		html+= '<li><a href="'+item.url+'" target="_blank"><h1>' + item.title +'</h1></a>';
+		html+='<img src="'+item.urlToImage+'">'
+		html+= '<p>'+ item.description+'</p></li>';
 	})
-	html+= '</ul>'
-	$('.result').html(html);
+	$('.container').html(html);
 }
