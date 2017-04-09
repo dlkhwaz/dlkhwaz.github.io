@@ -43,6 +43,26 @@
     </ul>
   </div>
 </nav>
+
+  <div class="container text-center">
+    <h3>Some of my favoriate video</h3>
+    <div id="videos-container"></div> <!-- this is where we put our template -->
+    <script type="text/x-handlebars-template" id="videos-template">
+      <div class="row">
+        {{#each items}}
+        <div class="col-sm-4">
+          <div class="col-sm-12" id="video">
+          <div style="width: 640px; height: 360px; margin: 35px auto 35px auto">
+          <iframe width="640" height="360" src="https://www.youtube.com/embed/fGdd9qNwQdQ?list=PLoYCgNOIyGACTDHuZtn0qoBdpzV9c327V?rel=0autoplay=1" frameborder="0" allowfullscreen></iframe>
+          </div>
+
+
+          <div class="col-sm-12" id="name">{{snippet.title}}</div>
+        </div>
+        {{/each}}
+      </div>
+    </script>
+  </div>
 </div>
 
 </head>

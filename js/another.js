@@ -1,5 +1,5 @@
 var url='https://www.googleapis.com/youtube/v3/videos?part=snippet&key=AIzaSyBCi2XQJWVhMgBEzjAqKPgaHQtRK7drgL8&chart=mostPopular&q=javascript'
-function loadData(){
+function loadMyVideo(){
 	$.ajax({
 		url:url,
 		type:'GET'
