@@ -12,7 +12,7 @@
 
   <link rel="stylesheet" type="text/css" href="css/code.css"> 
   <link rel="stylesheet" type="text/css"
-      href="https://fonts.googleapis.com/css?family=Font+Name">  
+  href="https://fonts.googleapis.com/css?family=Inconsolata&text=Hello%20World">  
  <!--   <link rel="stylesheet" type="text/css"
           href="https://fonts.googleapis.com/css?family=Tangerine">
     <style>
@@ -32,12 +32,17 @@
     </style> -->
 
   </head>
+
   <style>
     body{
-      background-image: url("https://static.pexels.com/photos/264466/pexels-photo-264466.jpeg");
+      background-image: url("https://static.pexels.com/photos/314829/pexels-photo-314829.jpeg");
       background-size: 100%;
     }
   </style>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Anton|Indie+Flower|Kaushan+Script');
+</style>
+
   <body>
     <nav class="navbar navbar-inverse" id="blue">
       <div class="container-fluid">
@@ -48,8 +53,8 @@
             &nbsp;&nbsp;&nbsp;
           </li>
           <li>
-            <a class="navbar-brand" href="#" id="brand">
-              Dlla Omer</a>
+            <a id="my-name" class="navbar-brand" href="#">
+              Dlkhwaz A.Omer</a>
 
             </li></ul>
           </div>
@@ -68,22 +73,75 @@
       <!-- <img src="cinqueterre.jpg" class="img-circle" alt="Cinque Terre" width="304" height="236"> -->
       <div id="home">
         <div class="container">
-          <h1 class="landing-title">Dlla Omer</h1>
+          <h1 class="landing-title">Dlkhwaz A.Omer</h1>
           <img src="images/DSC_0129 (1).jpg" class="img-circle" width="200px" height="200px"><br>
+          <h1 class="Welcome"><i class="fa fa-thumbs-o-up" aria-hidden="true" style="color:#3fb4db;"></i>
+            Welcome to my Website <a class="smile" href="#"><i class="fa fa-smile-o" aria-hidden="true" style="color:#3fb4db"></i>
+          </a></h1>
           <a class="large"><i class="fa fa-facebook-square" aria-hidden="true"></i>
           </a>
           <a class="large" href="https://linkedin.com/dlkhwaz" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
           <a class="large" href="https://github.com/dlkhwaz" target="_blank"><i class="fa fa-github"  ></i></a>
-          <a class="large" href="https://www.instagram.com/dlla_omer" target="_blank"><i class="fa fa-instagram" aria-hidden="true" style="color:orange margin:black"></i></a>
+          <a class="large" href="https://www.instagram.com/dlla_omer" target="_blank"><i class="fa fa-instagram" aria-hidden="true" style="color:orange margin:black"></i></a><br>
+          <a class="large" href="https://www.google.iq/maps/place/Erbil/@36.1972142,43.8685709,11z/data=!3m1!4b1!4m5!3m4!1s0x400722fe13443461:0x3e01d63391de79d1!8m2!3d36.2062933!4d44.0088697"><i class="fa fa-map-marker" aria-hidden="true"></i></a>
+          Erbil,Iraq<br>
+          2017-2018
+        </div>
+        <div>
+
+          <img src="images/dg8.gif" name="hr1"><img src="images/dg8.gif" name="hr2"><img src="dgc.gif"><img src="images/dg8.gif" name="mn1"><img src="images/dg8.gif" name="mn2"><img src="dgc.gif"><img src="images/dg8.gif" name="se1"><img src="images/dg8.gif" name="se2"><img src="dgam.gif" name="ampm"></div>
+
+<script type="text/javascript">
+// (c) 2000-2014 ricocheting.com
+dg = new Array();
+dg[0]=new Image();dg[0].src="dg0.gif";
+dg[1]=new Image();dg[1].src="dg1.gif";
+dg[2]=new Image();dg[2].src="dg2.gif";
+dg[3]=new Image();dg[3].src="dg3.gif";
+dg[4]=new Image();dg[4].src="dg4.gif";
+dg[5]=new Image();dg[5].src="dg5.gif";
+dg[6]=new Image();dg[6].src="dg6.gif";
+dg[7]=new Image();dg[7].src="dg7.gif";
+dg[8]=new Image();dg[8].src="dg8.gif";
+dg[9]=new Image();dg[9].src="dg9.gif";
+dgam=new Image();dgam.src="dgam.gif";
+dgpm=new Image();dgpm.src="dgpm.gif";
+
+function dotime(){ 
+  var d=new Date();
+  var hr=d.getHours(),mn=d.getMinutes(),se=d.getSeconds();
+
+  // set AM or PM
+  document.ampm.src=((hr<12)?dgam.src:dgpm.src);
+
+  // adjust from 24hr clock
+  if(hr==0){hr=12;}
+  else if(hr>12){hr-=12;}
+
+  document.hr1.src = getSrc(hr,10);
+  document.hr2.src = getSrc(hr,1);
+  document.mn1.src = getSrc(mn,10);
+  document.mn2.src = getSrc(mn,1);
+  document.se1.src = getSrc(se,10);
+  document.se2.src = getSrc(se,1);
+}
+
+function getSrc(digit,index){
+  return dg[(Math.floor(digit/index)%10)].src;
+}
+
+window.onload=function(){
+  dotime();
+  setInterval(dotime,1000);
+}
+
+</script>
+
         </div>
         <div id="about" class="container">
           <div class="page-header">
-            <a class="large" href="https://www.google.iq/maps/place/Erbil/@36.1972142,43.8685709,11z/data=!3m1!4b1!4m5!3m4!1s0x400722fe13443461:0x3e01d63391de79d1!8m2!3d36.2062933!4d44.0088697"><i class="fa fa-map-marker" aria-hidden="true"></i></a>
-            Erbil,Iraq
-            <h1 class="Welcome"><i class="fa fa-thumbs-o-up" aria-hidden="true" style="color:#3fb4db;"></i>
-              Welcome to my Website <a class="smile" href="#"><i class="fa fa-smile-o" aria-hidden="true" style="color:#3fb4db"></i>
-              </a></h1>
-            2017-2018
+
+            
             <br>
           </div>
           <div class="kxhead" data-id="qx943jo9o" style="display: none !important;">...</div>

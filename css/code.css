@@ -55,7 +55,7 @@ h1{
 	/*text-align: center;*/
 }
 .h1, .h2, .h3, h1, h2, h3{
-	font-family: 'Macondo', cursive;
+	font-family: 'Kaushan Script', cursive;
 	font-size: 24px;
 }
 #about{
@@ -127,7 +127,7 @@ ul.projects {
 	right: 0;
 	bottom: 0;
 	left: 0;
-	padding: 1em;
+	padding: 0.5em;
 	background-color: #3fb4db;
 	text-align: center;
 	color: white;
@@ -204,11 +204,16 @@ body {
 
 .navbar-inverse .navbar-nav>li>a{
   font-family: 'Tangerine', serif;
-  font-size: 25px;
-  text-shadow: 4px 4px 4px #aaa;
+  font-size: 20px;
+  /*text-shadow: 4px 4px 4px #aaa;*/
 
 }
-#brand{
-	font-family: 'Font Name', serif;
 
+#my-name{
+font-family: 'Kaushan Script', cursive;
+font-size: 25px;
+}
+.landing-title::first-letter{
+color: #0066ff;
+font-size: 60px;
 }
